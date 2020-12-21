@@ -1,0 +1,55 @@
+fun makeTuple b
+fun lambda1 a
+fun lambda2 x
+push x
+push 0
+equal
+push x
+push 1
+equal
+push :error:
+push b
+if
+push a
+if
+return
+funEnd
+push lambda2
+return
+funEnd
+push lambda1
+return
+funEnd
+pop
+fun FIB n
+fun lambda1 m
+fun thunk unit
+push FIB
+push m
+call
+push n
+push m
+add
+call
+return
+funEnd
+push makeTuple
+push thunk
+call
+push n
+call
+return
+funEnd
+push lambda1
+return
+funEnd
+push FIB
+push 0
+call
+toString
+println
+toString
+println
+toString
+println
+end

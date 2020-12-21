@@ -1,0 +1,12 @@
+push 10
+let
+push 30
+let
+push 40
+end
+add
+end
+add
+toString
+println
+quit

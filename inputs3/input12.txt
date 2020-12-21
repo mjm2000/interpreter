@@ -1,0 +1,10 @@
+push _Asd
+push :error: 
+bind
+toString
+println
+toString
+println
+toString
+println
+quit
